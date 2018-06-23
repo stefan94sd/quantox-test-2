@@ -1,0 +1,13 @@
+Zbog samog zahteva da se test radi iskljucivo u sirovom PHP-u, bez frameworka, zadatku sam pristupio proceduralno.
+Plasio sam se nedostatka vremena, sto se na kraju i desilo. Samo prisecanje sintakse sirovog PHP-a je uzelo danak.
+
+Svi zahtevi su ispunjeni osim jednog, pretraga users tabele na osnovu unosa. To je reseno, sam query je napisan, 
+, serach input je obradjen, salje se gde treba, samo jos ostaje da se poveze sa ajax pozivom Datatables tabele.
+
+Ukoliko postoje problemi u povezivanju sa samom bazom, promeniti konstante unutar server/constants.php datoteke: 
+
+define("SERVERNAME", "localhost");
+define("USERNAME", "root");
+define("PASSWORD", "");
+define("DATABASE", "quantox-test-2");
+define("TABLE", "users");
